@@ -1,0 +1,152 @@
+{% extends 'layouts/default.html' %}
+
+{% block index %}
+    
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">Actualités :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('une') }}">À la Une</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('en_continu') }}">En Continu</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('videos') }}">En vidéos</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('portfolios') }}">Portfolios</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('les_plus_lus') }}">Les plus lus</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('les_plus_partages') }}">Les plus partagés</a></div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">International :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('une_international') }}">À la Une</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('europe') }}">Europe</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('ameriques') }}">Amériques</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('asie') }}">Asie Pacifique</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('proche_orient') }}">Proche-Orient</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('royaume_uni') }}">Royaume-Uni</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('etats_unis') }}">États-Unis</a></div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">France :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('politique') }}">Politique</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('societe') }}">Société</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('les_decodeurs') }}">Les décodeurs</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('justice') }}">Justice</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('police') }}">Police</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('campus') }}">Campus</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('education') }}">Éducation</a></div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">Économie :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('une_economie') }}">À la Une</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('entreprises') }}">Entreprises</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('argent') }}">Argent</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('economie_francaise') }}">Économie Française</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('industrie') }}">Industrie</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('emploi') }}">Emploi</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('immobilier') }}">Immobilier</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('medias') }}">Médias</a></div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">Culture :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('une_culture') }}">À la Une</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('cinema') }}">Cinéma</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('musiques') }}">Musiques</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('television_et_radio') }}">Télévision et Radio</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('le_monde_des_livres') }}">Le Monde des Livres</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('arts') }}">Arts</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('scenes') }}">Scènes</a></div>
+            </div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-3 display-6 p-3">Sport :</div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('une_sport') }}">À la Une</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('football') }}">Football</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('rugby') }}">Rugby</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('tennis') }}">Tennis</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('cyclisme') }}">Cyclisme</a></div>
+            </div>
+            <div class="col-1">
+                <div class="d-flex align-content-center justify-content-center flex-wrap text-center border border-dark rounded" style="height: 80px;font-size: 1rem;"><a class="link-dark link-offset-2 link-underline-dark" href="{{ url_for('basket') }}">Basket</a></div>
+            </div>
+        </div>
+{% endblock index %}

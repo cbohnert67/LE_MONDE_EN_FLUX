@@ -1,0 +1,37 @@
+{% extends 'layouts/default.html' %}
+
+{% block results %}
+    
+        <div class="row p-3">
+            <div class="col-12">
+                <h2 class="text-center p-3">{{ title }}</h2>
+            </div>
+            <div class="col-12">
+                {% if results %}
+                <div class="accordion accordion-flush">
+                    {% for result in results %}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading{{ loop.index }}">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" aria-expanded="true" aria-controls="collapse{{ loop.index }}">
+                                {{ result['title'] }}
+                            </button>
+                        </h2>
+                        <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="heading{{ loop.index }}" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{ result['description']|safe }} ({{ result['published'] }})
+                                <a href="{{ result['link'] }}" target="_blank">Lire la suite</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <h1>Veuillez saisir une url valide.</h1>
+                <p>Exemple: https://www.lemonde.fr/rss/une.xml</p>
+                <img src="img/news.svg" alt="News image" width="350" height="350">
+                {% endif %}
+            </div>
+        </div>
+
+{% endblock results %}
