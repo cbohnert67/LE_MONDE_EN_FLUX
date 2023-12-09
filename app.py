@@ -52,7 +52,7 @@ def showResults(url=None):
                 'link':entry.getLink()} for entry in entries]
     wc_data = " ".join([d["description"] for d in results])
     wc_result = list(make_wordcloud(wc_data))
-    print(wc_result)
+
     return render_template('results.html', 
                            title=title, 
                            description=description, 
