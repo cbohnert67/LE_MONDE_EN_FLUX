@@ -7,6 +7,31 @@
                 <h2 class="text-center p-3">{{ title }}</h2>
             </div>
             <div class="col-12">
+                <div class="lead text-center">
+                    <p>{{ published }}</p>
+                    <p>Il y a actuellement {{ length }} flux que vous pouvez lire.</p>
+                </div>
+            </div>
+            <div class="col-4 p-5">
+                <img src="{{ url_for('static', filename='img/wordcloud.png') }}" alt="Wordcloud" width="350" height="350">
+            </div>
+            <div class="col-4 p-5 lead">
+                <h5>Les mots les plus utilisés :</h5>
+                <ul>
+                    {% for word in wc_result[:10] %}
+                    <li>{{ word }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-4 p-5 lead">
+                <h5>Les mots les moins utilisés :</h5>
+                <ul>
+                    {% for word in wc_result[-10:] %}
+                    <li>{{ word }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12">
                 {% if results %}
                 <div class="accordion accordion-flush">
                     {% for result in results %}
